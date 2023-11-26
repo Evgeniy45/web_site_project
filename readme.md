@@ -1,1 +1,1 @@
-# Git and Github
+# Site for University`s exam
