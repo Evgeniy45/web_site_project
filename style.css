@@ -25,6 +25,7 @@ p {
   font-size: 1.25rem;
   font-weight: 250;
 }
+/* Navigation menu */
 .nav_menu {
   padding: 0.5rem 0;
   background-color: #f8f9fa;
@@ -51,7 +52,6 @@ a.sign_button {
   color: white;
   background-color: #0d6efd;
   border-radius: 5px;
-  margin-right: 13px;
   padding: 12px 16px;
 }
 a.sign_button:hover {
@@ -60,8 +60,9 @@ a.sign_button:hover {
   text-decoration: none;
   color: #ffffff;
 }
+/* Header */
 header {
-  background: url(./img/bg-masthead.jpg) no-repeat center center;
+  background: url(./img/sea_bg.jpg) no-repeat center center;
   width: 100%;
   height: 612px;
   padding-top: 12rem;
@@ -72,11 +73,11 @@ header {
 header::before {
   content: "";
   position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0a1f3e;
   opacity: 0.5;
 }
 .header .content {
@@ -100,14 +101,18 @@ form {
   width: 100%;
   margin: 0;
 }
-form #email_field {
+
+form .email_field {
   border: none;
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
   width: 500px;
   font-size: 1.25rem;
 }
-form #sub_btn {
+.email_field:focus {
+  outline: 2px solid #0461ee;
+}
+form .sub_btn {
   border: none;
   border-radius: 0.5rem;
   background-color: #0d6efd;
@@ -116,6 +121,7 @@ form #sub_btn {
   color: white;
   font-size: 1.25rem;
 }
+/* Main */
 .top_section {
   background-color: #f8f9fa;
   display: flex;
@@ -147,4 +153,132 @@ form #sub_btn {
   width: 100%;
   color: #0461ee;
   margin-bottom: 15px;
+}
+.main_section {
+  height: 480px;
+}
+.description_content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 100px;
+  margin: 60px 0;
+}
+img {
+  width: 45.875rem;
+  height: 30rem;
+}
+
+/* People */
+.people_section {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 7rem 0;
+}
+.what_people_saying {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 74px;
+  padding: 0 0.75rem;
+}
+.what_people_saying h2 {
+  margin-bottom: 20px;
+}
+.poeples_opinion {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.person {
+  width: 30%;
+}
+.person_img img {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+  margin: 10px;
+}
+/* Form section */
+.call_section {
+  background: url(./img/sea_bg.jpg) no-repeat center center;
+  width: 100%;
+  height: 100%;
+  padding: 7rem 0;
+
+  background-size: cover;
+  position: relative;
+}
+.call_section::before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.call_section .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 120px;
+}
+
+.main_call_content h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+form #sign_email_field {
+  margin-right: 20px;
+}
+/* Footer */
+.footer {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+.foot_content {
+  margin: 0 85px;
+}
+.foot_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.footer li {
+  list-style-type: none;
+  display: inline;
+}
+.footer li:nth-child(odd) {
+  text-decoration: underline;
+  color: #0461ee;
+}
+.footer li:not(:first-child) {
+  margin-left: 10px;
+}
+.foot_nav_text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.footer svg {
+  height: 28px;
+  width: 28px;
+  margin: 5px;
+}
+.foot_links ul li {
+  list-style-type: none;
 }
