@@ -121,7 +121,9 @@ form .sub_btn {
   color: white;
   font-size: 1.25rem;
 }
+
 /* Main */
+
 .top_section {
   background-color: #f8f9fa;
   display: flex;
@@ -136,7 +138,7 @@ form .sub_btn {
 .icons-items {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
@@ -155,7 +157,7 @@ form .sub_btn {
   margin-bottom: 15px;
 }
 .main_section {
-  height: 480px;
+  height: 100%;
 }
 .description_content {
   display: flex;
@@ -166,13 +168,27 @@ form .sub_btn {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
-  padding: 100px;
-  margin: 60px 0;
+  width: 100%;
 }
-img {
-  width: 45.875rem;
-  height: 30rem;
+
+.description-wrapper {
+  padding: 100px;
+}
+
+.flex-reverse .description_content {
+  flex-direction: row-reverse !important;
+}
+
+.main_image {
+  width: 100%;
+  height: 480px;
+}
+
+.main_image img {
+  width: 100%;
+  height: 480px;
+  min-height: 30rem;
+  object-fit: cover;
 }
 
 /* People */
@@ -278,4 +294,21 @@ form #sign_email_field {
   height: 28px;
   width: 28px;
   margin: 5px;
+}
+
+/* @media (max-width: 989px) {
+  .wrapper{
+    flex-direction: row;
+  }
+} */
+
+.wrapper {
+  flex-direction: column !important;
+}
+
+.wrapper section {
+  flex-direction: row !important;
+}
+
+@media (max-width: 990px) {
 }
