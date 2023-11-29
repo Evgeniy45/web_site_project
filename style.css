@@ -263,7 +263,7 @@ form #sign_email_field {
   list-style-type: none;
   display: inline;
 }
-.footer li:nth-child(odd) {
+.foot_nav_list li:nth-child(odd) {
   text-decoration: underline;
   color: #0461ee;
 }
@@ -278,7 +278,4 @@ form #sign_email_field {
   height: 28px;
   width: 28px;
   margin: 5px;
-}
-.foot_links ul li {
-  list-style-type: none;
 }
