@@ -80,10 +80,6 @@
     align-items: center;
     margin: 10px 0;
   }
-  .people_speech {
-    text-align: center;
-    align-items: center;
-  }
   .foot_row {
     flex-direction: column;
   }
@@ -123,12 +119,16 @@
   }
 }
 @media (max-width: 500px) {
+  .header .headline_site {
+    margin: 0 10px;
+  }
   form {
     justify-content: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 8px;
   }
   form .email_field {
+    width: 350px;
     margin-bottom: 15px;
   }
   .description-wrapper {
@@ -146,5 +146,8 @@
     text-align: center;
     font-size: 0.85rem;
     margin: 0 3px;
+  }
+  .header .headline_site {
+    width: 320px;
   }
 }
