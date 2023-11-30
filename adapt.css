@@ -8,8 +8,6 @@
     width: 418px;
     margin-right: 20px;
   }
-  .icons-items {
-  }
   .icon-item {
     width: 342px;
     margin: 0 10px;
@@ -17,6 +15,10 @@
   }
 }
 @media (max-width: 1200px) {
+  .bootstrap_and_sign {
+    justify-content: space-between;
+    margin: 0 40px;
+  }
   .header .headline_site {
     width: 930px;
     padding: 0;
@@ -37,7 +39,7 @@
 }
 @media (max-width: 990px) {
   .bootstrap_and_sign {
-    margin: 0 120px;
+    margin: 0 100px;
   }
   .header .content {
     margin-bottom: 100px;
@@ -58,6 +60,9 @@
   .icon-item {
     margin: 20px 50px;
   }
+  .icon-item h3 {
+    font-size: 1.5rem;
+  }
   .description_content {
     flex-direction: column-reverse !important;
   }
@@ -69,20 +74,15 @@
   .description_content {
     flex-direction: column-reverse;
   }
-  .main_image {
-    width: 100%;
-    height: 480px;
-  }
-  .main_image img {
-    width: 100%;
-    height: 100%;
-  }
-
   .poeples_opinion {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
+  }
+  .people_speech {
+    text-align: center;
+    align-items: center;
   }
   .foot_row {
     flex-direction: column;
@@ -90,12 +90,61 @@
   .foot_nav_text {
     text-align: center;
   }
-  .person p {
-    width: 300px;
-    text-align: center;
-    margin-left: -25px;
+}
+@media (max-width: 750px) {
+  .header {
+    width: 100%;
+    height: 445px;
+    padding-top: 110px;
   }
-  .person_img img {
-    margin-top: 30px;
+  .header .headline_site {
+    width: 515px;
+  }
+  .headline_site h1 {
+    font-size: 1.85rem;
+  }
+  .call_content h2 {
+    font-size: 1.5rem;
+  }
+  form .email_field {
+    width: 390px;
+    margin-right: 20px;
+  }
+  .icon-item h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .bootstrap_and_sign {
+    margin: 0 20px;
+  }
+  .icon-item h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  form {
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+  form .email_field {
+    margin-bottom: 15px;
+  }
+  .description-wrapper {
+    padding: 25px;
+  }
+  .foot_content {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 410px) {
+  form .email_field {
+    width: 300px;
+  }
+  .foot_content {
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 0 3px;
   }
 }
